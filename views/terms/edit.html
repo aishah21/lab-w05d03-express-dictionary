@@ -7,6 +7,18 @@
   <title>Edit Term</title>
 </head>
 <body>
+  <h1>Edit terms</h1>
   
+    <a href="/">terms Home</a>
+    <a href="/terms">All terms</a>
+
+    <form  action="/terms/{{id}}?_method=PUT" method="POST" >
+    <label for="name">
+      Name: <input type="text" name="name" id="name" value="{{name}}"/>
+    </label>
+    <label for="type1">
+      definition: <input type="text" name="definition" id="definition" value="{{definition}}"/>
+    </form>
+    <button type="submit">Submit Update</button>
 </body>
 </html>
